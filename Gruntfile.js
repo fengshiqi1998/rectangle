@@ -1,23 +1,23 @@
 module.exports = function (grunt) {
   grunt.initConfig({
-  eslint: {
-    options: {
-      configFile: '.eslintrc.json'
+    eslint: {
+      options: {
+        configFile: '.eslintrc.json'
+      },
+      target: ['*.js']
     },
-    target: ['*.js']
-  },
-  csslint: {
-    options: {
-      csslintrc: '.csslintrc'
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
+      src: '*.css'
     },
-    src: '*.css'
-  },
-  htmlhint: {
-    options: {
-      htmlhintrc: '.htmlhintrc'
-    },
-    src: '*.html'
-  }
+    htmlhint: {
+      options: {
+        htmlhintrc: '.htmlhintrc'
+      },
+      src: '*.html'
+    }
   });
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-htmlhint');
