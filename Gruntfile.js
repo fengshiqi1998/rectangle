@@ -34,7 +34,7 @@ module.exports = function (grunt) {
         preserveLineBreaks: false                        
       },
       files: {
-        src: './index.html',
+        src: 'dist/index.html',
         dest: 'dist/index.html'                        
       }
     },
